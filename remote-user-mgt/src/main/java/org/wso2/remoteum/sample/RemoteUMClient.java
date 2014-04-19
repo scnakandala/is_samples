@@ -26,8 +26,6 @@ import org.wso2.carbon.authenticator.stub.AuthenticationAdminStub;
 import org.wso2.carbon.um.ws.api.WSUserStoreManager;
 import org.wso2.carbon.user.core.UserStoreException;
 
-import java.io.File;
-
 /**
  * This demonstrates how to use remote user management API to add, delete and read users.
  */
@@ -141,10 +139,9 @@ public class RemoteUMClient {
 
     public static void main(String[] args) throws Exception {
         //set trust store properties required in SSL communication.
-        String is_Home = ".." + File.separator + ".." + File.separator;
-        System.setProperty("javax.net.ssl.trustStore", is_Home + "repository" + File.separator + "resources" +
-                           File.separator + "security" + File.separator + "wso2carbon.jks");
-        System.setProperty("javax.net.ssl.trustStorePassword", "wso2carbon");
+        String trustStorePath = "/home/supun/Projects/is_samples/remote-user-mgt/src/main/resources/security/remoteum.jks";
+        System.setProperty("javax.net.ssl.trustStore",trustStorePath);
+        System.setProperty("javax.net.ssl.trustStorePassword", "remoteum");
 
         RemoteUMClient remoteUMClient = new RemoteUMClient();
         //log in as admin user and obtain the cookie
