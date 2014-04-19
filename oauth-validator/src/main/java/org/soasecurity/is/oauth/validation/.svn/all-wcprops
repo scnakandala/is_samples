@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/wso2/!svn/ver/195212/people/asela/oauth/validation/client/src/main/java/org/soasecurity/is/oauth/validation
+END
+ValidationResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/wso2/!svn/ver/194297/people/asela/oauth/validation/client/src/main/java/org/soasecurity/is/oauth/validation/ValidationResponse.java
+END
+OAuth2TokenValidationServiceClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/wso2/!svn/ver/194297/people/asela/oauth/validation/client/src/main/java/org/soasecurity/is/oauth/validation/OAuth2TokenValidationServiceClient.java
+END
+TokenValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/wso2/!svn/ver/195212/people/asela/oauth/validation/client/src/main/java/org/soasecurity/is/oauth/validation/TokenValidator.java
+END
