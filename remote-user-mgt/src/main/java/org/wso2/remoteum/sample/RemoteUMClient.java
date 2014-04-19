@@ -33,7 +33,7 @@ import java.io.File;
  */
 public class RemoteUMClient {
 
-    private String serverUrl = "https://localhost:9443/services/";
+    private String serverUrl = "https://localhost:9444/services/";
 
     private AuthenticationAdminStub authstub = null;
     private ConfigurationContext ctx;
