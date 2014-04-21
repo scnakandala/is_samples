@@ -26,6 +26,9 @@ import org.wso2.carbon.authenticator.stub.AuthenticationAdminStub;
 import org.wso2.carbon.um.ws.api.WSUserStoreManager;
 import org.wso2.carbon.user.core.UserStoreException;
 
+import java.io.File;
+import java.io.IOException;
+
 /**
  * This demonstrates how to use remote user management API to add, delete and read users.
  */
@@ -137,11 +140,39 @@ public class RemoteUMClient {
         System.out.println("Deleted user:" + userName);
     }
 
+    /**
+     * Deleting an existing role from the system
+     *
+     * @throws Exception
+     */
+    public void deleteRole(String role) throws UserStoreException {
+        remoteUserStoreManager.deleteRole(role);
+        System.out.println("Deleted role:" + role);
+    }
+
+    /**
+     * Function to get the trust store location
+     *
+     */
+    public static String getTrustStore() throws Exception {
+
+        try{
+            File file = new File((new File(".")).getCanonicalPath() + File.separator +"resources" +
+                    File.separator +"client-truststore.jks");
+            if(file.exists()){
+                return file.getCanonicalPath();
+            } else {
+                return null;
+            }
+        } catch (IOException e) {
+            throw new Exception("Error while calculating trust store path", e);
+        }
+    }
+
     public static void main(String[] args) throws Exception {
         //set trust store properties required in SSL communication.
-        String trustStorePath = "/home/supun/Projects/is_samples/remote-user-mgt/src/main/resources/security/remoteum.jks";
-        System.setProperty("javax.net.ssl.trustStore",trustStorePath);
-        System.setProperty("javax.net.ssl.trustStorePassword", "remoteum");
+        System.setProperty("javax.net.ssl.trustStore",getTrustStore());
+        System.setProperty("javax.net.ssl.trustStorePassword", "wso2carbon");
 
         RemoteUMClient remoteUMClient = new RemoteUMClient();
         //log in as admin user and obtain the cookie
@@ -165,12 +196,19 @@ public class RemoteUMClient {
         }
         //delete an existing user
         remoteUMClient.deleteUser("kamal");
+
+        //delete role eng
+        remoteUMClient.deleteRole("eng");
+
         //print the current list of users
         String[] userList = remoteUMClient.listUsers();
         System.out.println("List of users in the system currently:");
         for (String user : userList) {
             System.out.println(user);
         }
+
+        //delete an existing user
+        remoteUMClient.deleteUser("saman");
     }
 
 }
