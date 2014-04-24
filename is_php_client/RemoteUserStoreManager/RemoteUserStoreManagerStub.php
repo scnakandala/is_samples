@@ -891,7 +891,7 @@ class UpdateCredentialByAdmin {
      * @access public
      */
     public $userName;
-    
+
     /**
      * @var string $newCredential
      * @access public
@@ -1030,7 +1030,8 @@ class UserStoreException {
  */
 class RemoteUserStoreManagerStub extends SoapClient {
 
-    private static $classmap = array(     
+    private static $classmap = array(
+        'ClaimDTO' => 'ClaimDTO',
         'PermissionDTO' => 'PermissionDTO',
         'Tenant' => 'Tenant',
         'RealmConfiguration' => 'RealmConfiguration',
