@@ -58,6 +58,8 @@ class RemoteUserStoreManager {
     public function addRole($roleName){
         $paramerters = new AddRole();
         $paramerters->roleName=$roleName;
+        $paramerters->userList=null;
+        $paramerters->permissions=null;
         $this->serviceStub->addRole($paramerters);
     }
     
