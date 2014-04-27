@@ -3,20 +3,13 @@
 require_once './AuthenticationAdmin/AuthenticationAdminStub.php';
 
 /**
- * @todo 
- * Implement authenticateWithRememberMe(authenticateWithRememberMe $parameters)
- * function.
- * 
- */
-
-/**
  * AuthenticationAdmin class
  *
  */
 class AuthenticationAdmin {
 
     /**
-     * @var AuthenticationAdmin\AuthenticationAdminStub $serviceStub
+     * @var AuthenticationAdminStub $serviceStub
      * @access private
      */
     private $serviceStub;
@@ -26,7 +19,16 @@ class AuthenticationAdmin {
                 $server_url . "AuthenticationAdmin?wsdl", $options
         );
     }
-
+    
+    /**
+     * Function to get the soap client
+     * 
+     * @return SoapClient
+     */
+    public function getSoapClient(){
+        return $this->serviceStub;
+    }
+    
     /**
      * Function to logout the admin user
      */

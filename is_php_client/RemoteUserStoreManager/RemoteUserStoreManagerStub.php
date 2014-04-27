@@ -1102,7 +1102,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         }
         parent::__construct($wsdl, $options);
     }
-
+    
     /**
      * Function to authenticate 
      *
