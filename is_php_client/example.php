@@ -2,28 +2,18 @@
 
 require_once './ClientFacade.php';
 
-//for production system should enable the peer verification.
-$context = stream_context_create(array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'allow_self_signed' => true
-    )
-));
-
-$parameters = array(
-    'stream_context' => $context,
-    'trace'=>true
-);
-
-$isClientFacade;
-$service_url = "https://localhost:9444/services/";
 $admin_username = "admin";
 $admin_password = "admin";
-$remoter_server = "127.0.0.1";
+$server = "localhost";
+$service_url = "https://localhost:9444/services/";
 
+
+$isClientFacade;
 
 try {
-    $isClientFacade = new ClientFacade($service_url, $parameters);
+    $isClientFacade = new ClientFacade(
+            $service_url, $admin_username, $admin_password, $server
+    );
     print 'Successfully create the Identity Server Client' . PHP_EOL;
 } catch (Exception $ex) {
     print $ex->getMessage() . PHP_EOL;

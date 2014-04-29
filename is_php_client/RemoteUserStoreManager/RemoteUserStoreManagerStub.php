@@ -1102,7 +1102,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         }
         parent::__construct($wsdl, $options);
     }
-    
+
     /**
      * Function to authenticate 
      *
@@ -1113,8 +1113,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('authenticate', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1127,8 +1126,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getUserList', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1141,8 +1139,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getUserClaimValue', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1155,8 +1152,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getUserListOfRole', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1169,8 +1165,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('isReadOnly', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1183,8 +1178,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('updateCredential', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1197,8 +1191,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('setUserClaimValue', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1211,8 +1204,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getUserClaimValuesForClaims', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1225,8 +1217,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('deleteUserClaimValues', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1239,8 +1230,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('deleteUserClaimValue', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1253,8 +1243,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('isExistingUser', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1267,8 +1256,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('updateCredentialByAdmin', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1281,8 +1269,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getTenantId', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1295,8 +1282,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getRoleNames', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1309,8 +1295,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getProperties', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1323,8 +1308,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getUserId', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1337,8 +1321,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getAllProfileNames', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1351,8 +1334,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getPasswordExpirationTime', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1365,8 +1347,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('listUsers', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1379,8 +1360,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('deleteRole', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1393,8 +1373,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('deleteUser', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1407,8 +1386,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getRoleListOfUser', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1421,8 +1399,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('updateRoleName', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1435,8 +1412,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('isExistingRole', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1449,8 +1425,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('updateRoleListOfUser', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1463,8 +1438,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getUserClaimValues', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1477,8 +1451,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getHybridRoles', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1491,8 +1464,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('addUserClaimValues', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1505,8 +1477,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('addUser', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1519,8 +1490,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('addRole', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1533,8 +1503,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('updateUserListOfRole', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1547,8 +1516,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getTenantIdofUser', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1561,8 +1529,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('setUserClaimValues', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1575,8 +1542,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('addUserClaimValue', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
     /**
@@ -1589,8 +1555,7 @@ class RemoteUserStoreManagerStub extends SoapClient {
         return $this->__soapCall('getProfileNames', array($parameters), array(
                     'uri' => 'http://service.ws.um.carbon.wso2.org',
                     'soapaction' => ''
-                        )
-        );
+        ));
     }
 
 }
