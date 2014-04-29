@@ -25,18 +25,6 @@ class ClientFacade {
      * @var string
      * @access private
      */
-    private $cookie_name;
-
-    /**
-     * @var string
-     * @access private
-     */
-    private $cookie_value;
-    
-    /**
-     * @var string
-     * @access private
-     */
     private $server;
     
     /**
@@ -44,6 +32,7 @@ class ClientFacade {
      * @access private
      */
     private $service_url;
+
 
     public function __construct($service_url, $admin_username, $admin_password, $server) {
         //for production system should enable the peer verification.
