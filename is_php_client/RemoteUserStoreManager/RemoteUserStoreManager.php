@@ -63,6 +63,11 @@ class RemoteUserStoreManager {
         $this->serviceStub->addRole($paramerters);
     }
     
+    /**
+     * Function to get a list of users
+     * 
+     * @return username list
+     */
     public function listUsers(){
         $parameters = new ListUsers();
         $parameters->filter = "*";
@@ -70,4 +75,18 @@ class RemoteUserStoreManager {
         
         return $this->serviceStub->listUsers($parameters);
     }
+    
+    /**
+     * Function to check whether the given username already exists
+     * 
+     * @param string $parameters
+     * @return boolean
+     */
+    public function isExistingUser($parameters) {
+        $parameters = new IsExistingUser();
+        $parameters->userName = $username;
+        
+        return $this->serviceStub->isExistingUser($parameters)->return;
+    }
+    
 }

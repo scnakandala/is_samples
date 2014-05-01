@@ -84,5 +84,13 @@ class ClientFacade {
             throw new Exception("Unable to add role", 0, $ex);
         }
     }
+    
+    public function authenticate($username, $password){
+        try {
+            //
+        } catch (Exception $ex) {
+            throw new Exception("Unable to authenticate user", 0, $ex);
+        }
+    }
 
 }
